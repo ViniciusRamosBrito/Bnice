@@ -1,0 +1,74 @@
+.main-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+}
+
+.perfil{
+    width: 30%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1.4;
+    overflow: auto;
+}
+
+.image-container{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title-container{
+color: white;
+}
+
+.main-space{
+    background-color: white;
+    flex:3;
+    display: flex;
+    flex-direction: column;
+}
+.h-menu{
+    background-color: white;
+    flex:0.3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.posts{
+    flex:2;
+    background-color: white;
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column; /* Change to column layout for smaller screens */
+    }
+    .perfil {
+        width: 100%; /* Take up full width */
+        flex: 1; /* Equal flex basis */
+    }
+
+    .image-container{
+        width: 100px;
+        height: 100px;
+    }
+    .main-space {
+        flex: 2; /* Increase size to take up more space */
+    }
+    .h-menu {
+        flex: 0.2; /* Reduce size to fit in the smaller screen */
+    }
+    .posts {
+        flex: 3; /* Increase size to take up more space */
+    }
+}
